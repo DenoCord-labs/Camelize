@@ -33,7 +33,7 @@ function walk(obj: any): any {
   }, {});
 }
 
-export default function camelize<T>(
+export function camelize<T>(
   obj: T
 ): T extends String ? string : Camelize<T> {
   return typeof obj === "string" ? camelCase(obj) : walk(obj);
