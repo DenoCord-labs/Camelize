@@ -1,4 +1,4 @@
-import camelize from "../mod.ts";
+import { camelize } from "../mod.ts";
 import {
   assert,
   fail,
